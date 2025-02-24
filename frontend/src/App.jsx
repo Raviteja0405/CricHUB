@@ -1,27 +1,28 @@
 import { useState } from "react";
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import Statistics from "./components/Statistics";
-import Players from "./components/Players";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
+import Home from "./pages/Home.jsx";
+import PlayersPage from "./pages/PlayersPage.jsx";
+import TournamentsPage from "./pages/TournamentsPage.jsx";
+import StatsPage from "./pages/StatsPage.jsx";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
 
   return (
-    <div
-      className={
-        darkMode
-          ? "bg-gray-900 text-white min-h-screen"
-          : "bg-white text-gray-900 min-h-screen"
-      }
-    >
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <HeroSection darkMode={darkMode} />
-      <Statistics darkMode={darkMode} />
-      <Players darkMode={darkMode} />
-      <Footer darkMode={darkMode} />
-    </div>
+    <Router>
+      <div className={darkMode ? "bg-gray-900 text-white min-h-screen" : "bg-white text-gray-900 min-h-screen"}>
+        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Routes>
+          <Route path="/" element={<Home darkMode={darkMode} />} />
+          <Route path="/players" element={<PlayersPage darkMode={darkMode} />} />
+          <Route path="/tournaments" element={<TournamentsPage darkMode={darkMode} />} />
+          <Route path="/stats" element={<StatsPage darkMode={darkMode} />} />
+        </Routes>
+        <Footer darkMode={darkMode} />
+      </div>
+    </Router>
   );
 };
 
