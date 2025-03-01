@@ -30,7 +30,7 @@ const PlayersPage = ({ darkMode }) => {
           </div>
         ) : (
           players.map((player, index) => (
-            <div key={index} className="p-4 rounded-lg shadow-md bg-gray-800">
+            <div key={index} className={`p-4 rounded-lg shadow-md ${darkMode ? "bg-[#0a0f1e] text-white" : "bg-gray-100 text-gray-900"}`}>
               <img
                 src={player.img}
                 alt={player.name}
