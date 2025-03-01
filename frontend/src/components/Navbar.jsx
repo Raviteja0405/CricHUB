@@ -1,17 +1,21 @@
+import { useState } from "react";
 import sunIcon from "../assets/lightMode.svg";
 import moonIcon from "../assets/nightMode.svg";
 import CricHubIcon from "../assets/CricHubIcon.svg";
+import { Menu, X } from "lucide-react"; // Icons for hamburger menu
 
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ darkMode, setDarkMode }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav
-      className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-full max-w-5xl h-14 z-50 flex items-center justify-between 
-      px-6 shadow-lg backdrop-blur-md transition-all duration-300 rounded-lg border-1
-      ${darkMode ? "bg-[#111827]/80 text-white" : "bg-white/70 text-gray-900"}`}
+      className={`fixed top-4 left-1/2 transform -translate-x-1/2  w-[90%] sm:w-full max-w-5xl h-14 z-50 flex items-center justify-between 
+      px-6 shadow-lg backdrop-blur-md transition-all duration-300 rounded-lg border
+      ${darkMode ? "bg-[#111827]/80 text-white border-gray-700" : "bg-white/70 text-gray-900 border-gray-300"}`}
     >
       {/* Logo */}
-      <a href="#" className="flex items-center text-2xl font-bold">
+      <a href="/" className="flex items-center text-2xl font-bold">
         <img
           src={CricHubIcon}
           alt="CricHub Logo"
@@ -20,13 +24,34 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         CricHUB
       </a>
 
-      {/* Menu Items (Hidden in Mobile) */}
+      {/* Desktop Menu */}
       <ul className="hidden md:flex gap-6 font-medium">
-        <li><a href="#" className="hover:text-blue-500">Home</a></li>
-        <li><a href="#" className="hover:text-blue-500">Players</a></li>
-        <li><a href="#" className="hover:text-blue-500">Tournaments</a></li>
-        <li><a href="#" className="hover:text-blue-500">Stats</a></li>
+        <li><a href="/" className="hover:text-blue-500">Home</a></li>
+        <li><a href="/players" className="hover:text-blue-500">Players</a></li>
+        <li><a href="/tournaments" className="hover:text-blue-500">Tournaments</a></li>
       </ul>
+
+      {/* Mobile Menu Button */}
+      <button 
+        className="md:hidden z-50 p-2"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? <X size={26} /> : <Menu size={26} />}
+      </button>
+
+      {/* Mobile Menu Dropdown */}
+      <div
+        className={`absolute top-16 right-4 w-48 p-4 rounded-lg shadow-lg transform transition-all duration-300
+        ${isOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"}
+        ${darkMode ? "bg-[#1f2937] text-white border-gray-700" : "bg-white text-gray-900 border-gray-300"}
+        md:hidden`}
+      >
+        <ul className="flex flex-col gap-4 font-medium">
+          <li><a href="/" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Home</a></li>
+          <li><a href="/players" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Players</a></li>
+          <li><a href="/tournaments" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Tournaments</a></li>
+        </ul>
+      </div>
 
       {/* Dark Mode Toggle */}
       <button

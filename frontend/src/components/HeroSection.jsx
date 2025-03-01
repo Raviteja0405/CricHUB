@@ -30,7 +30,7 @@ const HeroSection = ({ darkMode }) => {
     >
       <h1 className="text-4xl font-bold mb-4">Where Cricket Dreams Come Alive</h1>
       <p className="text-lg mb-6">
-        Experience the thrill of local cricket through passion, dedication, and teamwork.
+        Experience the thrill of cricket through passion, dedication, and teamwork.
       </p>
 
       <div className="w-full max-w-4xl">
