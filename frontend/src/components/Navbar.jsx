@@ -1,7 +1,7 @@
 import { useState } from "react";
-import sunIcon from "../assets/lightMode.svg";
-import moonIcon from "../assets/nightMode.svg";
-import CricHubIcon from "../assets/CricHubIcon.svg";
+import sunIcon from "/lightMode.svg";
+import moonIcon from "/nightMode.svg";
+import CricHubIcon from "/CricHubIcon.svg";
 import { Menu, X } from "lucide-react"; // Icons for hamburger menu
 
 // eslint-disable-next-line react/prop-types
