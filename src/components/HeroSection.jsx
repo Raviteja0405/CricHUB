@@ -53,7 +53,7 @@ const HeroSection = ({ darkMode }) => {
       </div>
 
       <Link
-        to="/CricHUB/"
+        to="/teams"
         className="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-500 transition"
       >
         Explore Teams

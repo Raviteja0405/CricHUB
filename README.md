@@ -23,7 +23,7 @@ CricHub is a modern and interactive web application designed for cricket enthusi
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/CricHub.git
+   git clone https://github.com/Raviteja0405/CricHub.git
    cd CricHub
    ```
 
