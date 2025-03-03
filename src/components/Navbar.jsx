@@ -2,10 +2,13 @@ import { useState } from "react";
 import sunIcon from "/lightMode.svg";
 import moonIcon from "/nightMode.svg";
 import CricHubIcon from "/CricHubIcon.svg";
-import { Menu, X } from "lucide-react"; // Icons for hamburger menu
+import { Menu, X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ darkMode, setDarkMode }) => {
+  const navigate = useNavigate();
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -26,9 +29,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-6 font-medium">
-        <li><a href="/CricHUB" className="hover:text-blue-500">Home</a></li>
-        <li><a href="/CricHUB/players" className="hover:text-blue-500">Players</a></li>
-        <li><a href="/CricHUB/tournaments" className="hover:text-blue-500">Tournaments</a></li>
+        <li>
+          {/* <a href="/CricHUB" className="hover:text-blue-500">Home</a> */}
+          <button className="hover:text-blue-500 cursor-pointer" onClick={() => navigate("/CricHUB")}>Home</button>
+          </li>
+        <li><button className="hover:text-blue-500 cursor-pointer" onClick={() => navigate("/CricHUB/players")}>Players</button></li>
+        <li><button className="hover:text-blue-500 cursor-pointer" onClick={() => navigate("/CricHUB/tournaments")}>Tournaments</button></li>
       </ul>
 
       {/* Mobile Menu Button */}
