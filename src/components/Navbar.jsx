@@ -26,9 +26,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-6 font-medium">
-        <li><a href="/CricHUB" className="hover:text-blue-500 cursor-pointer"></a></li>
-        <li><a href="/CricHUB/players" className="hover:text-blue-500 cursor-pointer"></a></li>
-        <li><a href="/CricHUB/tournaments" className="hover:text-blue-500 cursor-pointer"></a></li>
+        <li><a href="/CricHUB" className="hover:text-blue-500 cursor-pointer">Home</a></li>
+        <li><a href="/CricHUB/players" className="hover:text-blue-500 cursor-pointer">Players</a></li>
+        <li><a href="/CricHUB/tournaments" className="hover:text-blue-500 cursor-pointer">Tournaments</a></li>
       </ul>
 
       {/* Mobile Menu Button */}
