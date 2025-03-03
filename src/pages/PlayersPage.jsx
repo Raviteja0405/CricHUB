@@ -39,7 +39,7 @@ const PlayersPage = ({ darkMode }) => {
               <h3 className="text-xl font-semibold mt-4">{player.name}</h3>
               <button
                 className="mt-4 px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg cursor-pointer shadow-md hover:bg-blue-700 transition-all"
-                onClick={() => window.location.href = player.profileUrl}
+                onClick={() => window.open(player.profileUrl, '_blank')}
               >
                 View Profile
               </button>
