@@ -5,7 +5,7 @@ import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
 import PlayersPage from "./pages/PlayersPage.jsx";
 import TournamentsPage from "./pages/TournamentsPage.jsx";
-// import TeamsPage from "./pages/TeamsPage.jsx";
+import TeamsPage from "./pages/TeamsPage.jsx";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -20,7 +20,7 @@ const App = () => {
             <Route path="/" element={<Home darkMode={darkMode} />} />
             <Route path="/players" element={<PlayersPage darkMode={darkMode} />} />
             <Route path="/tournaments" element={<TournamentsPage darkMode={darkMode} />} />
-            {/* <Route path="/teams" element={<TeamsPage darkMode={darkMode} />} /> */}
+            <Route path="/teams" element={<TeamsPage darkMode={darkMode} />} />
           </Routes>
         </div>
         <Footer darkMode={darkMode} />
