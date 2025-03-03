@@ -15,9 +15,9 @@ const App = () => {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className="pt-14 overflow-x-hidden {darkmode? bg-[#0a0f1e]}: white">
         <Routes>
-          <Route path="/" element={<Home darkMode={darkMode} />} />
-          <Route path="/players" element={<PlayersPage darkMode={darkMode} />} />
-          <Route path="/tournaments" element={<TournamentsPage darkMode={darkMode} />} />
+          <Route path="/CricHUB" element={<Home darkMode={darkMode} />} />
+          <Route path="/CricHUB/players" element={<PlayersPage darkMode={darkMode} />} />
+          <Route path="/CricHUB/tournaments" element={<TournamentsPage darkMode={darkMode} />} />
         </Routes>
       </div>
       <Footer darkMode={darkMode} />

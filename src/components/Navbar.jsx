@@ -15,7 +15,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       ${darkMode ? "bg-[#111827]/80 text-white border-gray-700" : "bg-white/70 text-gray-900 border-gray-300"}`}
     >
       {/* Logo */}
-      <a href="/" className="flex items-center text-2xl font-bold">
+      <a href="/CricHUB" className="flex items-center text-2xl font-bold">
         <img
           src={CricHubIcon}
           alt="CricHub Logo"
@@ -26,9 +26,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-6 font-medium">
-        <li><a href="/" className="hover:text-blue-500">Home</a></li>
-        <li><a href="/players" className="hover:text-blue-500">Players</a></li>
-        <li><a href="/tournaments" className="hover:text-blue-500">Tournaments</a></li>
+        <li><a href="/CricHUB" className="hover:text-blue-500">Home</a></li>
+        <li><a href="/CricHUB/players" className="hover:text-blue-500">Players</a></li>
+        <li><a href="/CricHUB/tournaments" className="hover:text-blue-500">Tournaments</a></li>
       </ul>
 
       {/* Mobile Menu Button */}

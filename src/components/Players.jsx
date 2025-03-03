@@ -31,7 +31,7 @@ const Players = ({ darkMode }) => {
       {/* View All Players Button */}
       <div className="flex justify-center mt-8">
         <button
-          onClick={() => navigate("/players")}
+          onClick={() => navigate("/CricHUB/players")}
           className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-all cursor-pointer"
         >
           View All Players
