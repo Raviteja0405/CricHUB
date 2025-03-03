@@ -47,9 +47,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         md:hidden`}
       >
         <ul className="flex flex-col gap-4 font-medium">
-          <li><a href="/" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Home</a></li>
-          <li><a href="/players" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Players</a></li>
-          <li><a href="/tournaments" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Tournaments</a></li>
+          <li><a href="/CricHUB" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Home</a></li>
+          <li><a href="/CricHUB/players" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Players</a></li>
+          <li><a href="/CricHUB/tournaments" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Tournaments</a></li>
         </ul>
       </div>
 
