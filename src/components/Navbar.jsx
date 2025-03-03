@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import sunIcon from "/lightMode.svg";
 import moonIcon from "/nightMode.svg";
 import CricHubIcon from "/CricHubIcon.svg";
@@ -24,11 +26,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         CricHUB
       </a>
 
-      {/* Desktop Menu */}
+
       <ul className="hidden md:flex gap-6 font-medium">
-        <li><a href="/CricHUB" className="hover:text-blue-500 cursor-pointer">Home</a></li>
-        <li><a href="/CricHUB/players" className="hover:text-blue-500 cursor-pointer">Players</a></li>
-        <li><a href="/CricHUB/tournaments" className="hover:text-blue-500 cursor-pointer">Tournaments</a></li>
+        <li><Link to="/CricHUB" className="hover:text-blue-500 cursor-pointer">Home</Link></li>
+        <li><Link to="/CricHUB/players" className="hover:text-blue-500 cursor-pointer">Players</Link></li>
+        <li><Link to="/CricHUB/tournaments" className="hover:text-blue-500 cursor-pointer">Tournaments</Link></li>
       </ul>
 
       {/* Mobile Menu Button */}
@@ -40,6 +42,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       </button>
 
       {/* Mobile Menu Dropdown */}
+
       <div
         className={`absolute top-16 right-4 w-48 p-4 rounded-lg shadow-lg transform transition-all duration-300
         ${isOpen ? "scale-100 opacity-100" : "scale-95 opacity-0 pointer-events-none"}
@@ -47,9 +50,21 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         md:hidden`}
       >
         <ul className="flex flex-col gap-4 font-medium">
-          <li><a href="/CricHUB" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Home</a></li>
-          <li><a href="/CricHUB/players" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Players</a></li>
-          <li><a href="/CricHUB/tournaments" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>Tournaments</a></li>
+          <li>
+            <Link to="/CricHUB" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/CricHUB/players" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>
+              Players
+            </Link>
+          </li>
+          <li>
+            <Link to="/CricHUB/tournaments" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>
+              Tournaments
+            </Link>
+          </li>
         </ul>
       </div>
 

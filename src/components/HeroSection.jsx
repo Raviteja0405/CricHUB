@@ -1,4 +1,6 @@
 import { useMemo } from "react";
+import { Link } from "react-router-dom";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -50,12 +52,12 @@ const HeroSection = ({ darkMode }) => {
         </Slider>
       </div>
 
-      <a
-        href="#"
+      <Link
+        to="/CricHUB/"
         className="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-500 transition"
       >
         Explore Teams
-      </a>
+      </Link>
     </section>
   );
 };
