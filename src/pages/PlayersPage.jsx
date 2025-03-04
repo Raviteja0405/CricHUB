@@ -18,6 +18,9 @@ const PlayersPage = ({ darkMode }) => {
     }, 800);
   }, [currentPage]);
 
+  // Calculate total pages
+  const totalPages = Math.ceil(playersData.length / playersPerPage);
+
   return (
     <section className={`py-12 px-4 ${darkMode ? "bg-[#0a0f1e] text-white" : "bg-white text-gray-900"}`}>
       <h2 className="text-center text-3xl font-bold mb-2">Our Players</h2>
@@ -57,10 +60,21 @@ const PlayersPage = ({ darkMode }) => {
         >
           &lt;
         </button>
-        <span className="px-4 py-2 bg-gray-700 text-white rounded-md">{currentPage}</span>
+
+        {/* Page Number Buttons */}
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index + 1}
+            className={`px-4 py-2 mx-1 rounded-md cursor-pointer ${currentPage === index + 1 ? "bg-blue-600 text-white" : "bg-gray-300 hover:bg-gray-400"} text-black`}
+            onClick={() => setCurrentPage(index + 1)}
+          >
+            {index + 1}
+          </button>
+        ))}
+
         <button
-          className={`px-4 py-2 mx-1 rounded-md cursor-pointer ${playersData.length <= currentPage * playersPerPage ? "bg-gray-500 cursor-not-allowed" : "bg-blue-600 hover:bg-blue-700"} text-white`}
-          disabled={playersData.length <= currentPage * playersPerPage || loading}
+          className={`px-4 py-2 mx-1 rounded-md cursor-pointer ${currentPage === totalPages ? "bg-gray-500 cursor-not-allowed" : "bg-blue-600 hover:bg-blue-700"} text-white`}
+          disabled={currentPage === totalPages || loading}
           onClick={() => setCurrentPage((prev) => prev + 1)}
         >
           &gt;

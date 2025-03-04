@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+// import { useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import players from "../data/playerData";
 
@@ -6,17 +6,14 @@ import players from "../data/playerData";
 const Players = ({ darkMode }) => {
   const navigate = useNavigate();
 
-  const randomPlayers = useMemo(() => {
-    const shuffled = [...players].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, 3);
-  }, []);
+  const seletedPlayers = players.slice(0, 3);
 
   return (
     <section className={`py-12 px-4 ${darkMode ? "bg-[#0a0f1e] text-white" : "bg-white text-gray-900"}`}>
       <h2 className="text-center text-3xl font-bold mb-6">Our Players</h2>
 
       <div className="container mx-auto grid md:grid-cols-3 gap-6">
-        {randomPlayers.map((player, index) => (
+        {seletedPlayers.map((player, index) => (
           <div key={index} className="p-4 rounded-lg shadow-md bg-opacity-10">
             <img
               src={player.img}
