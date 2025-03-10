@@ -12,16 +12,16 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <nav
-      className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-full max-w-5xl h-14 z-50 flex items-center justify-between 
+      className={`fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-full max-w-5xl h-16 z-50 flex items-center justify-between 
       px-6 shadow-lg backdrop-blur-md transition-all duration-300 rounded-lg border
       ${darkMode ? "bg-[#111827]/80 text-white border-gray-700" : "bg-white/70 text-gray-900 border-gray-300"}`}
     >
       {/* Logo */}
-      <Link to="/" className="flex items-center text-2xl font-bold">
+      <Link to="/" className="flex items-center text-xl font-bold">
         <img
           src={CricHubIcon}
           alt="CricHub Logo"
-          className={`mr-2 w-8 h-8 ${darkMode ? "filter invert" : "filter invert-0"}`}
+          className={`mr-2 w-6 h-6 sm:w-8 sm:h-8 ${darkMode ? "filter invert" : "filter invert-0"}`}
         />
         CricHUB
       </Link>
@@ -76,12 +76,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       {/* Dark Mode Toggle */}
       <button
         onClick={() => setDarkMode(!darkMode)}
-        className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 cursor-pointer"
+        className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 cursor-pointer transition-all duration-300 hover:scale-105"
       >
         {darkMode ? (
-          <img src={sunIcon} alt="Sun Icon" className="w-6 h-6" />
+          <img src={sunIcon} alt="Sun Icon" className="w-5 h-5 sm:w-6 sm:h-6" />
         ) : (
-          <img src={moonIcon} alt="Moon Icon" className="w-6 h-6 filter invert" />
+          <img src={moonIcon} alt="Moon Icon" className="w-5 h-5 sm:w-6 sm:h-6 filter invert" />
         )}
       </button>
     </nav>
