@@ -1,23 +1,6 @@
 import { useEffect, useState } from "react";
 import players from "../data/playerData";
 
-const headers = {
-  "Accept-Language": "en-US,en;q=0.7",
-  "Connection": "keep-alive",
-  "Origin": "https://stumpsapp.com",
-  "Referer": "https://stumpsapp.com/",
-  "Sec-Fetch-Dest": "empty",
-  "Sec-Fetch-Mode": "cors",
-  "Sec-Fetch-Site": "same-site",
-  "Sec-GPC": "1",
-  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36",
-  "accept": "application/json",
-  "content-type": "application/json",
-  "sec-ch-ua": '"Not(A:Brand";v="99", "Brave";v="133", "Chromium";v="133"',
-  "sec-ch-ua-mobile": "?0",
-  "sec-ch-ua-platform": '"Windows"',
-};
-
 const body = JSON.stringify({
   method: "GET",
   data: { uk: null },
@@ -35,7 +18,10 @@ const Statistics = ({ darkMode }) => {
       try {
         const response = await fetch(player.statisticsUrl, {
           method: "POST",
-          headers: headers,
+          headers: {
+            "accept": "application/json",
+            "content-type": "application/json",
+          },
           body: body,
         });
 
