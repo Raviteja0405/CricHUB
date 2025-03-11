@@ -32,6 +32,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <li><Link to="/players" className="hover:text-blue-500 cursor-pointer">Players</Link></li>
         <li><Link to="/tournaments" className="hover:text-blue-500 cursor-pointer">Tournaments</Link></li>
         <li><Link to="/teams" className="hover:text-blue-500 cursor-pointer">Teams</Link></li>
+        <li><Link to="/timeline" className="hover:text-blue-500 cursor-pointer">Timeline</Link></li>
       </ul>
 
       {/* Mobile Menu Button */}
@@ -68,6 +69,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           <li>
             <Link to="/teams" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>
               Teams
+            </Link>
+          </li>
+          <li>
+            <Link to="/timeline" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>
+              Timeline
             </Link>
           </li>
         </ul>
