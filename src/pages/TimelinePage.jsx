@@ -23,17 +23,18 @@ const TimelinePage = ({ darkMode }) => {
           {timelineData.map((event, index) => (
             <div
               key={index}
-              className={`relative flex w-full sm:w-full ${
+              className={`relative flex w-full ${
                 index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"
               }`}
             >
+              {/* Timeline Dot */}
               <div
                 className={`absolute left-7.5 sm:left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 ${
                   darkMode ? "bg-blue-500 border-[#101828]" : "bg-blue-700 border-[#F3F4F6]"
                 } w-4 h-4 sm:w-5 sm:h-5 rounded-full border-2 border-[#101828] z-10`}
               ></div>
 
-              {/* Timeline Card: Move slightly right in mobile */}
+              {/* Timeline Card*/}
               <div
                 className={`ml-10 sm:ml-0 w-full sm:w-1/2 px-6 flex ${
                   index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"

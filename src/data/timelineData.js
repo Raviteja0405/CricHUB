@@ -1,13 +1,15 @@
 const timelineData = [
   {
-    date: "October 26, 2024",
-    title: "First ever half century scored in Test- Rahul Reddy",
+    date: "February 15, 2025",
+    title: "ODI Championship 2025 winners - Signature XI's",
     description:
-      "A historic moment as Rahul Reddy became the first player to score a half-century in Test cricket for his team. Displaying remarkable patience and technique, he anchored the innings against a formidable bowling attack. His crucial knock laid a strong foundation, earning praise from opponents and teammates alike as a milestone moment in his career.",
-    mediaType: "none",
+      "An incredible series where Signature XI's secured the championship with a spectacular last-over decider match finish. Rahul Reddy and Shakti being led the foundation of the team and Rahul being man of the tournament.",
+    
     // mediaType: options -> {'image', 'video'}
-    mediaUrl: null,
+    mediaType: "none",
+
     // mediaUrl: "In embed format i.e youtube.com/embed/......" instead of youtube.com/watch?v=....
+    mediaUrl: null,
   },
   {
     date: "February 07, 2025",
@@ -18,10 +20,10 @@ const timelineData = [
     mediaUrl: null,
   },
   {
-    date: "February 15, 2025",
-    title: "ODI Championship 2025 winners - Signature XI's",
+    date: "October 26, 2024",
+    title: "First ever half century scored in Test- Rahul Reddy",
     description:
-      "An incredible series where Signature XI's secured the championship with a spectacular last-over decider match finish. Rahul Reddy and Shakti being led the foundation of the team and Rahul being man of the tournament.",
+      "A historic moment as Rahul Reddy became the first player to score a half-century in Test cricket for his team. Displaying remarkable patience and technique, he anchored the innings against a formidable bowling attack. His crucial knock laid a strong foundation, earning praise from opponents and teammates alike as a milestone moment in his career.",
     mediaType: "none",
     mediaUrl: null,
   },
