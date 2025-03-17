@@ -1,16 +1,16 @@
 let players = [
   {
-    name: 'Rahul Reddy',
-    img: 'https://f002.backblazeb2.com/b2api/v1/b2_download_file_by_id?fileId=4_z0e2621278a7d96a270300f13_f1162a12e63f39e7d_d20240803_m042524_c002_v0001162_t0010_u01722659124975',
-    profileUrl : "https://stumpsapp.com/player/-O25IL33cu2IzjpiWouZ/",
-    statisticsUrl: 'https://gateway.stumpsapp.com/users/-O25IL33cu2IzjpiWouZ/profile/statistics',
-    hasFacedImage: true,
-  },
-  {
     name: 'Rahul',
     img: 'https://f002.backblazeb2.com/b2api/v1/b2_download_file_by_id?fileId=4_z0e2621278a7d96a270300f13_f118c3d266c578eeb_d20240803_m041651_c002_v0001151_t0007_u01722658611504',
     profileUrl : "https://stumpsapp.com/player/-O25IE2exrecMfkfALpN/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O25IE2exrecMfkfALpN/profile/statistics',
+    hasFacedImage: true,
+  },
+  {
+    name: 'Rahul Reddy',
+    img: 'https://f002.backblazeb2.com/b2api/v1/b2_download_file_by_id?fileId=4_z0e2621278a7d96a270300f13_f1162a12e63f39e7d_d20240803_m042524_c002_v0001162_t0010_u01722659124975',
+    profileUrl : "https://stumpsapp.com/player/-O25IL33cu2IzjpiWouZ/",
+    statisticsUrl: 'https://gateway.stumpsapp.com/users/-O25IL33cu2IzjpiWouZ/profile/statistics',
     hasFacedImage: true,
   },
   {

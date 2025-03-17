@@ -23,7 +23,7 @@ const App = () => {
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <div
           className={`pt-14 overflow-x-hidden ${
-            darkMode ? "bg-[#0a0f1e] text-white" : "bg-white text-gray-900"
+            darkMode ? "bg-[#0a0f1e] text-white" : "bg-gray-100 text-gray-900"
           }`}
         >
           <Routes>

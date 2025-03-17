@@ -19,7 +19,7 @@ const TimelinePage = ({ darkMode }) => {
           }`}
         ></div>
 
-        <div className="flex flex-col space-y-10">
+        <div className="flex flex-col space-y-5 sm:space-y-0">
           {timelineData.map((event, index) => (
             <div
               key={index}
