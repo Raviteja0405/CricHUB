@@ -13,6 +13,7 @@ const TimelinePage = ({ darkMode }) => {
       <p className="text-center mb-12">Memorable moments from our cricket matches</p>
 
       <div className="relative mx-auto max-w-4xl">
+        {/* Timeline Line */}
         <div
           className={`absolute left-7 sm:left-1/2 transform sm:-translate-x-1/2 h-full w-1 ${
             darkMode ? "bg-blue-500" : "bg-blue-700"
@@ -25,7 +26,7 @@ const TimelinePage = ({ darkMode }) => {
               key={index}
               className={`relative flex w-full ${
                 index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"
-              }`}
+              } ${index > 0 ? "sm:-mt-15" : ""}`}
             >
               {/* Timeline Dot */}
               <div
@@ -34,7 +35,7 @@ const TimelinePage = ({ darkMode }) => {
                 } w-4 h-4 sm:w-5 sm:h-5 rounded-full border-2 border-[#101828] z-10`}
               ></div>
 
-              {/* Timeline Card*/}
+              {/* Timeline Card */}
               <div
                 className={`ml-10 sm:ml-0 w-full sm:w-1/2 px-6 flex ${
                   index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"

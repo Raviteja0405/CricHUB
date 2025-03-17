@@ -18,7 +18,8 @@ const Players = ({ darkMode }) => {
             <img
               src={player.img}
               alt={player.name}
-              className="w-full h-[calc(40vh)] object-cover object-top rounded-lg shadow-lg"
+              className="w-full h-[calc(40vh)] object-cover object-top rounded-lg shadow-lg hover:cursor-pointer"
+              onClick={() => window.open(player.profileUrl, '_blank')}
             />
             <h3 className="text-xl text-center font-semibold mt-4">{player.name}</h3>
           </div>

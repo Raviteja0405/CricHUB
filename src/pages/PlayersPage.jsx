@@ -50,7 +50,7 @@ const PlayersPage = ({ darkMode }) => {
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-4">{player.name}</h3>
                   <button
-                    className="w-full py-3 px-4 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300 focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50"
+                    className="w-full py-3 px-4 bg-blue-600 text-white font-semibold rounded-lg cursor-pointer shadow-md hover:bg-blue-700 transition-colors duration-300 focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50"
                     onClick={() => window.open(player.profileUrl, '_blank')}
                   >
                     View Profile
@@ -68,7 +68,7 @@ const PlayersPage = ({ darkMode }) => {
               className={`flex items-center justify-center h-8 w-8 sm:h-10 sm:w-10 rounded-md text-base font-bold mx-1 ${
                 currentPage === 1 
                   ? "bg-gray-300 text-gray-500 cursor-not-allowed" 
-                  : "bg-blue-600 text-white hover:bg-blue-700"
+                  : "bg-blue-600 text-white hover:bg-blue-700 cursor-pointer"
               }`}
               disabled={currentPage === 1 || loading}
               onClick={() => setCurrentPage((prev) => prev - 1)}
@@ -82,7 +82,7 @@ const PlayersPage = ({ darkMode }) => {
                 {Array.from({ length: totalPages }, (_, index) => (
                   <button
                     key={index + 1}
-                    className={`h-8 w-8 sm:h-10 sm:w-10 text-base font-medium rounded-md mx-1 ${
+                    className={`h-8 w-8 sm:h-10 sm:w-10 text-base font-medium rounded-md mx-1 cursor-pointer ${
                       currentPage === index + 1 
                         ? "bg-blue-600 text-white" 
                         : darkMode 
@@ -101,7 +101,7 @@ const PlayersPage = ({ darkMode }) => {
               className={`flex items-center justify-center h-8 w-8 sm:h-10 sm:w-10 rounded-md text-base font-bold mx-1 ${
                 currentPage === totalPages 
                   ? "bg-gray-300 text-gray-500 cursor-not-allowed" 
-                  : "bg-blue-600 text-white hover:bg-blue-700"
+                  : "bg-blue-600 text-white hover:bg-blue-700 cursor-pointer"
               }`}
               disabled={currentPage === totalPages || loading}
               onClick={() => setCurrentPage((prev) => prev + 1)}
