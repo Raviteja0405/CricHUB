@@ -7,6 +7,7 @@ import PlayersPage from "./pages/PlayersPage.jsx";
 import TournamentsPage from "./pages/TournamentsPage.jsx";
 import TeamsPage from "./pages/TeamsPage.jsx";
 import TimelinePage from "./pages/timelinePage.jsx";
+import PlayersStatsPage from "./pages/PlayersStatsPage.jsx";
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
@@ -38,6 +39,10 @@ const App = () => {
               element={<TournamentsPage darkMode={darkMode} />}
             />
             <Route path="/teams" element={<TeamsPage darkMode={darkMode} />} />
+            <Route
+              path="/playerStats"
+              element={<PlayersStatsPage darkMode={darkMode} />}
+            />
             <Route
               path="/timeline"
               element={<TimelinePage darkMode={darkMode} />}

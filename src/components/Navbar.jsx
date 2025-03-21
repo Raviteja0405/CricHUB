@@ -32,6 +32,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <li><Link to="/players" className="hover:text-blue-500 cursor-pointer">Players</Link></li>
         <li><Link to="/tournaments" className="hover:text-blue-500 cursor-pointer">Tournaments</Link></li>
         <li><Link to="/teams" className="hover:text-blue-500 cursor-pointer">Teams</Link></li>
+        <li><Link to="/playerStats" className="hover:text-blue-500 cursor-pointer">Stats</Link></li>
         <li><Link to="/timeline" className="hover:text-blue-500 cursor-pointer">Timeline</Link></li>
       </ul>
 
@@ -72,22 +73,30 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </Link>
           </li>
           <li>
+            <Link to="/playerStats" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>
+              Stats
+            </Link>
+          </li>
+          <li>
             <Link to="/timeline" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>
               Timeline
             </Link>
           </li>
+          
         </ul>
       </div>
 
       {/* Dark Mode Toggle */}
       <button
         onClick={() => setDarkMode(!darkMode)}
-        className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 cursor-pointer transition-all duration-300 hover:scale-105"
+        className={`p-2 rounded-full  cursor-pointer transition-all duration-300 hover:scale-105
+          ${darkMode ? "bg-gray-700" : "bg-gray-200"}
+          `}
       >
         {darkMode ? (
-          <img src={sunIcon} alt="Sun Icon" className="w-5 h-5 sm:w-6 sm:h-6" />
+          <img src={sunIcon} alt="Sun Icon" className="w-5 h-5 sm:w-6 sm:h-6 filter invert" />
         ) : (
-          <img src={moonIcon} alt="Moon Icon" className="w-5 h-5 sm:w-6 sm:h-6 filter invert" />
+          <img src={moonIcon} alt="Moon Icon" className="w-5  h-5 sm:w-6 sm:h-6 filter invert" />
         )}
       </button>
     </nav>
