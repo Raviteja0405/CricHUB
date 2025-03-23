@@ -10,15 +10,15 @@ const StatsCard = ({ rank, player, playType, darkMode }) => {
 
   return (
     <div
-      className={`flex sm:w-[95%] mx-auto items-center p-4 rounded-lg shadow-md mb-2 transition-all hover:scale-103 transform duration-300 ${
+      className={`flex sm:w-[95%] mx-auto items-center p-2 rounded-lg shadow-md mb-2 transition-all hover:scale-103 transform duration-300 ${
         darkMode ? "bg-[#0A0F1E] text-white" : "bg-white text-gray-800"
       }`}
     >
       {/* Rank Section */}
       <div
         className={`flex-shrink-0 ${
-          darkMode ? "bg-indigo-600" : "bg-indigo-500"
-        } text-white font-semibold rounded-lg w-12 h-12 flex items-center justify-center mr-6 shadow-lg`}
+          darkMode ? "text-white" : "text-blue-600"
+        }  font-semibold rounded-lg w-12 h-12 flex items-center justify-center mr-6 text-3xl`}
       >
         {formatValue(rank)}
       </div>
@@ -27,11 +27,11 @@ const StatsCard = ({ rank, player, playType, darkMode }) => {
       <div className="flex-grow">
         <h2
           className={`font-semibold text-lg mb-2 ${
-            darkMode ? "text-white" : "text-indigo-600"
+            darkMode ? "text-white" : "text-blue-600"
           }`}
         >
           {/* Player name with horizontal scrolling if the name is long */}
-          <div className="overflow-x-auto whitespace-nowrap w-30 sm:w-35">
+          <div className="overflow-x-auto whitespace-nowrap w-30 sm:w-35 mt-2">
             {/* eslint-disable-next-line react/prop-types */}
             {formatValue(player?.name)}
           </div>
@@ -58,9 +58,9 @@ const StatsCard = ({ rank, player, playType, darkMode }) => {
               // eslint-disable-next-line react/prop-types
               { label: "6's", value: player?.sixes },
               // eslint-disable-next-line react/prop-types
-              { label: "50's", value: player?.fifties },
+              { label: "30's", value: player?.thirties },
               // eslint-disable-next-line react/prop-types
-              { label: "100's", value: player?.hundreds },
+              { label: "50's", value: player?.fifties },
               // eslint-disable-next-line react/prop-types
               { label: "Runs", value: player?.battingRuns },
             ].map((stat, index) => (

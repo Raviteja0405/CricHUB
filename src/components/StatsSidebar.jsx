@@ -8,7 +8,7 @@ const StatsSidebar = ({ matchFormat, setMatchFormat, selectedOption, setSelected
 
   return (
     <div
-      className={`w-full p-4 border-r overflow-y-auto transition-all duration-300 ${
+      className={`w-full p-4 overflow-y-auto transition-all duration-300 ${
         darkMode
           ? "bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white"
           : "bg-gradient-to-b from-white via-gray-100 to-white text-gray-800"
@@ -19,7 +19,7 @@ const StatsSidebar = ({ matchFormat, setMatchFormat, selectedOption, setSelected
         <button
           className={`px-4 py-2 rounded-full text-sm sm:text-base font-semibold transition-all cursor-pointer ${
             matchFormat === "Test"
-              ? "bg-indigo-500 text-white shadow-md"
+              ? "bg-[#2F5D93] text-white shadow-md"
               : "bg-gray-300 text-gray-800 hover:bg-gray-400"
           }`}
           onClick={() => {
@@ -32,7 +32,7 @@ const StatsSidebar = ({ matchFormat, setMatchFormat, selectedOption, setSelected
         <button
           className={`px-4 py-2 rounded-full text-sm sm:text-base font-semibold transition-all cursor-pointer ${
             matchFormat === "ODI"
-              ? "bg-indigo-500 text-white shadow-md"
+              ? "bg-[#2F5D93] text-white shadow-md"
               : "bg-gray-300 text-gray-800 hover:bg-gray-400"
           }`}
           onClick={() => {

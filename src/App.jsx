@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
 import PlayersPage from "./pages/PlayersPage.jsx";
-import TournamentsPage from "./pages/TournamentsPage.jsx";
+// import TournamentsPage from "./pages/TournamentsPage.jsx";
 import TeamsPage from "./pages/TeamsPage.jsx";
 import TimelinePage from "./pages/timelinePage.jsx";
 import PlayersStatsPage from "./pages/PlayersStatsPage.jsx";
@@ -34,10 +34,10 @@ const App = () => {
               path="/players"
               element={<PlayersPage darkMode={darkMode} />}
             />
-            <Route
+            {/* <Route
               path="/tournaments"
               element={<TournamentsPage darkMode={darkMode} />}
-            />
+            /> */}
             <Route path="/teams" element={<TeamsPage darkMode={darkMode} />} />
             <Route
               path="/playerStats"

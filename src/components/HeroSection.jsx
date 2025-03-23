@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -45,18 +44,6 @@ const HeroSection = ({ darkMode }) => {
           ))}
         </Slider>
       </div>
-
-      {/* Explore Teams Button with dynamic colors */}
-      <Link
-        to="/teams"
-        className={`mt-6 inline-block px-6 py-3 rounded-lg text-lg font-semibold transition ${
-          darkMode
-            ? "bg-blue-700 text-white hover:bg-blue-600"
-            : "bg-blue-600 text-white hover:bg-blue-500"
-        }`}
-      >
-        Explore Teams
-      </Link>
     </section>
   );
 };

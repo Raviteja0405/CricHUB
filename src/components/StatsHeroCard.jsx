@@ -53,7 +53,7 @@ const StatsHeroCard = ({ player, playType, selectedOption, darkMode }) => {
 
   return (
     <div
-      className={`relative flex flex-col md:flex-row items-center p-6 rounded-lg shadow-lg transition-all duration-300 transform ${
+      className={`relative flex flex-col md:flex-row items-center p-6 rounded-lg shadow-lg transition-all duration-300 transform bg-[url(https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)] bg-cover ${
         darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
       }`}
     >
@@ -70,12 +70,12 @@ const StatsHeroCard = ({ player, playType, selectedOption, darkMode }) => {
           src={player.image}
           // eslint-disable-next-line react/prop-types
           alt={player.name}
-          className="w-40 h-40 rounded-lg border-4 border-white shadow-lg transform transition duration-300 hover:scale-105"
+          className="w-40 h-40 rounded-lg object-cover shadow-lg transform transition duration-300 hover:scale-105"
           onLoad={handleImageLoad} // Trigger when the image has loaded
         />
         <div
-          className={`absolute top-2 right-2 px-4 py-2 rounded-lg text-center text-sm font-semibold ${
-            darkMode ? "bg-indigo-500" : "bg-blue-500 text-white"
+          className={`absolute top-0 right-0 px-4 py-2 rounded-lg text-center text-sm font-semibold bg-[#2F5D93] ${
+            darkMode ? "" : " text-white"
           }`}
         >
           #1
@@ -85,8 +85,8 @@ const StatsHeroCard = ({ player, playType, selectedOption, darkMode }) => {
       {/* Player Info */}
       <div className="ml-0 md:ml-8 mt-4 md:mt-0 flex flex-col text-center md:text-left">
         {/* eslint-disable-next-line react/prop-types */}
-        <h2 className="text-4xl font-bold text-indigo-500">{player.name}</h2>
-        <p className={`text-lg ${darkMode ? "text-gray-300" : "text-gray-600"}`}>{playType} Stats</p>
+        <h2 className="text-4xl font-bold text-[#164e8f]">{player.name}</h2>
+        <p className={`text-lg font-bold ${darkMode ? "text-[#1E2939]" : "text-[oklch(0.38 0.189 293.745)]"}`}>{playType} Stats</p>
 
         {/* Stats Grid */}
         <div
@@ -139,14 +139,14 @@ const StatsHeroCard = ({ player, playType, selectedOption, darkMode }) => {
                 <strong className="text-lg">{player.sixes}</strong>
               </div>
               <div className="text-center">
+                <span className={`block text-sm ${darkMode ? "text-gray-400" : "text-gray-500"}`}>30s</span>
+                {/* eslint-disable-next-line react/prop-types */}
+                <strong className="text-lg">{player.thirties}</strong>
+              </div>
+              <div className="text-center">
                 <span className={`block text-sm ${darkMode ? "text-gray-400" : "text-gray-500"}`}>50s</span>
                 {/* eslint-disable-next-line react/prop-types */}
                 <strong className="text-lg">{player.fifties}</strong>
-              </div>
-              <div className="text-center">
-                <span className={`block text-sm ${darkMode ? "text-gray-400" : "text-gray-500"}`}>100s</span>
-                {/* eslint-disable-next-line react/prop-types */}
-                <strong className="text-lg">{player.hundreds}</strong>
               </div>
               <div className="text-center">
                 <span className={`block text-sm ${darkMode ? "text-gray-400" : "text-gray-500"}`}>Runs</span>
@@ -184,7 +184,7 @@ const StatsHeroCard = ({ player, playType, selectedOption, darkMode }) => {
       {/* Badge for the Selected Stat */}
       <div
         className={`absolute top-4 right-4 px-6 py-3 rounded-lg hidden sm:block text-center shadow-md text-white ${
-          darkMode ? "bg-gradient-to-r from-indigo-400 to-indigo-700" : "bg-gradient-to-r from-blue-400 to-blue-600"
+          darkMode ? "bg-gradient-to-r from-[#7b9dc3] to-[#2F5D93]" : "bg-gradient-to-r to-[#94b1d3]"
         }`}
       >
         <h2 className="text-3xl font-bold">{getBadgeValue()}</h2>

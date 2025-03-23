@@ -22,10 +22,10 @@ let players = [
   },
   {
     name: 'Deepanshu',
-    img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0025.jpg',
+    img: 'https://f002.backblazeb2.com/b2api/v1/b2_download_file_by_id?fileId=4_z0e2621278a7d96a270300f13_f107d6fd4daf0840d_d20250323_m063421_c002_v0001163_t0019_u01742711661818',
     profileUrl : "https://stumpsapp.com/player/-O3Lhwl42huppzdYe4k3/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O3Lhwl42huppzdYe4k3/profile/statistics',
-    hasFacedImage: false,
+    hasFacedImage: true,
   },
   {
     name: 'Ravi Teja',
@@ -43,10 +43,10 @@ let players = [
   },
   {
     name: 'Shakti',
-    img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0100.jpg',
+    img: 'https://f002.backblazeb2.com/b2api/v1/b2_download_file_by_id?fileId=4_z0e2621278a7d96a270300f13_f10773014f9d5378b_d20250323_m063305_c002_v0001125_t0022_u01742711585117',
     profileUrl : "https://stumpsapp.com/player/-O99hLxqvU6WEDCKEWtj/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O99hLxqvU6WEDCKEWtj/profile/statistics',
-    hasFacedImage: false,
+    hasFacedImage: true,
   },
   {
     name: 'Vishal',
@@ -92,10 +92,10 @@ let players = [
   },
   {
     name: 'Balaram',
-    img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0052.jpg',
+    img: 'https://f002.backblazeb2.com/b2api/v1/b2_download_file_by_id?fileId=4_z0e2621278a7d96a270300f13_f1040d306edb1c6b7_d20250323_m063123_c002_v0203011_t0049_u01742711483203',
     profileUrl : "https://stumpsapp.com/player/-OEvKiHYtngHcGu8-S-Y/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-OEvKiHYtngHcGu8-S-Y/profile/statistics',
-    hasFacedImage: false,
+    hasFacedImage: true,
   },
   {
     name: 'Vishal Reddy',
@@ -116,13 +116,6 @@ let players = [
     img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0007.jpg',
     profileUrl : "https://stumpsapp.com/player/-OFF5qtHTD4q6jwqJUd4/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-OFF5qtHTD4q6jwqJUd4/profile/statistics',
-    hasFacedImage: false,
-  },
-  {
-    name: 'Extra',
-    img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0014.jpg',
-    profileUrl : "https://stumpsapp.com/player/-OBmQgFeIgETKpLJtiRg/",
-    statisticsUrl: 'https://gateway.stumpsapp.com/users/-OBmQgFeIgETKpLJtiRg/profile/statistics',
     hasFacedImage: false,
   },
   {

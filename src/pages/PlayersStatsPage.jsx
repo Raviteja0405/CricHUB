@@ -42,7 +42,7 @@ const PlayersStatsPage = ({ darkMode }) => {
           highestScore: matchStats.hs || 0,
           fours: matchStats.bt4 || 0,
           sixes: matchStats.bt6 || 0,
-          hundreds: matchStats.bt100 || 0,
+          thirties: matchStats.bt30 || 0,
           fifties: matchStats.bt50 || 0,
           battingRuns: matchStats.btrn || 0,
           bowlingInnings: matchStats.blin || 0,
@@ -119,7 +119,7 @@ const PlayersStatsPage = ({ darkMode }) => {
       </div>
 
       {/* Main Content */}
-      <div className={`flex-1 ${darkMode ? 'bg-gray-900' : 'bg-white'}rounded-lg shadow-lg overflow-auto custom-scroll`}>
+      <div className={`flex-1 ${darkMode ? 'bg-gray-900' : 'bg-white'} rounded-lg shadow-lg overflow-auto custom-scroll`}>
         {loading ? (
           <p className={`text-center ${darkMode ? 'text-gray-300' : 'text-gray-500'}`}>Loading statistics...</p>
         ) : (

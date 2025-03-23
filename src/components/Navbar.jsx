@@ -30,7 +30,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <ul className="hidden md:flex gap-6 font-medium">
         <li><Link to="/" className="hover:text-blue-500 cursor-pointer">Home</Link></li>
         <li><Link to="/players" className="hover:text-blue-500 cursor-pointer">Players</Link></li>
-        <li><Link to="/tournaments" className="hover:text-blue-500 cursor-pointer">Tournaments</Link></li>
+        {/* <li><Link to="/tournaments" className="hover:text-blue-500 cursor-pointer">Tournaments</Link></li> */}
         <li><Link to="/teams" className="hover:text-blue-500 cursor-pointer">Teams</Link></li>
         <li><Link to="/playerStats" className="hover:text-blue-500 cursor-pointer">Stats</Link></li>
         <li><Link to="/timeline" className="hover:text-blue-500 cursor-pointer">Timeline</Link></li>
@@ -62,11 +62,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               Players
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/tournaments" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>
               Tournaments
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/teams" className="hover:text-blue-400" onClick={() => setIsOpen(false)}>
               Teams
