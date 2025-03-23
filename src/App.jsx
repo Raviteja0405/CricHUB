@@ -6,7 +6,7 @@ import Home from "./pages/Home.jsx";
 import PlayersPage from "./pages/PlayersPage.jsx";
 // import TournamentsPage from "./pages/TournamentsPage.jsx";
 import TeamsPage from "./pages/TeamsPage.jsx";
-import TimelinePage from "./pages/timelinePage.jsx";
+import TimelinePage from "./pages/TimelinePage.jsx";
 import PlayersStatsPage from "./pages/PlayersStatsPage.jsx";
 
 const App = () => {

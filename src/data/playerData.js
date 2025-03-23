@@ -69,13 +69,13 @@ let players = [
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O25Iky_Ox4iNK3NN1vV/profile/statistics',
     hasFacedImage: false,
   },
-  {
-    name: 'Komal',
-    img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0097.jpg',
-    profileUrl : "https://stumpsapp.com/player/-OEqGAqRam2_Js5wNmR8/",
-    statisticsUrl: 'https://gateway.stumpsapp.com/users/-OEqGAqRam2_Js5wNmR8/profile/statistics',
-    hasFacedImage: false,
-  },
+  // {
+  //   name: 'Komal',
+  //   img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0097.jpg',
+  //   profileUrl : "https://stumpsapp.com/player/-OEqGAqRam2_Js5wNmR8/",
+  //   statisticsUrl: 'https://gateway.stumpsapp.com/users/-OEqGAqRam2_Js5wNmR8/profile/statistics',
+  //   hasFacedImage: false,
+  // },
   {
     name: 'Pushkar',
     img: 'https://f002.backblazeb2.com/b2api/v1/b2_download_file_by_id?fileId=4_z0e2621278a7d96a270300f13_f1025c3bb4b886999_d20250310_m044322_c002_v0001094_t0041_u01741581802209',
@@ -97,13 +97,13 @@ let players = [
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-OEvKiHYtngHcGu8-S-Y/profile/statistics',
     hasFacedImage: true,
   },
-  {
-    name: 'Vishal Reddy',
-    img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0079.jpg',
-    profileUrl : "https://stumpsapp.com/player/-OAjRx3jILQLHjvOXMcj/",
-    statisticsUrl: 'https://gateway.stumpsapp.com/users/-OAjRx3jILQLHjvOXMcj/profile/statistics',
-    hasFacedImage: false,
-  },
+  // {
+  //   name: 'Vishal Reddy',
+  //   img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0079.jpg',
+  //   profileUrl : "https://stumpsapp.com/player/-OAjRx3jILQLHjvOXMcj/",
+  //   statisticsUrl: 'https://gateway.stumpsapp.com/users/-OAjRx3jILQLHjvOXMcj/profile/statistics',
+  //   hasFacedImage: false,
+  // },
   {
     name: 'Prakash',
     img: 'https://f002.backblazeb2.com/b2api/v1/b2_download_file_by_id?fileId=4_z0e2621278a7d96a270300f13_f117836b45848c435_d20240803_m042742_c002_v0203009_t0030_u01722659262596',

@@ -1,5 +1,5 @@
 import timelineData from "../data/timeLineData.js";
-import TimelineCard from "../components/timelineCard.jsx";
+import TimelineCard from "../components/TimelineCard.jsx";
 
 // eslint-disable-next-line react/prop-types
 const TimelinePage = ({ darkMode }) => {
