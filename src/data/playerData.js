@@ -5,6 +5,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-O25IE2exrecMfkfALpN/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O25IE2exrecMfkfALpN/profile/statistics',
     hasFacedImage: true,
+    backgroundPosition: "center",
+    zoom: "145",
   },
   {
     name: 'Rahul Reddy',
@@ -12,6 +14,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-O25IL33cu2IzjpiWouZ/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O25IL33cu2IzjpiWouZ/profile/statistics',
     hasFacedImage: true,
+    backgroundPosition: "center",
+    zoom: "135",
   },
   {
     name: 'Nikhil',
@@ -19,6 +23,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-O3MbdoML3-F60WtAXKq/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O3MbdoML3-F60WtAXKq/profile/statistics',
     hasFacedImage: true,
+    backgroundPosition: "center",
+    zoom: "200",
   },
   {
     name: 'Deepanshu',
@@ -26,6 +32,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-O3Lhwl42huppzdYe4k3/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O3Lhwl42huppzdYe4k3/profile/statistics',
     hasFacedImage: true,
+    backgroundPosition: "center",
+    zoom: "225",
   },
   {
     name: 'Ravi Teja',
@@ -33,6 +41,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-O25INygzbxwZwFgG1FX/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O25INygzbxwZwFgG1FX/profile/statistics',
     hasFacedImage: true,
+    backgroundPosition: "top",
+    zoom: "120",
   },
   {
     name: 'Ashfaq',
@@ -40,6 +50,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-O25IG9jVBHYnCFBNtCE/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O25IG9jVBHYnCFBNtCE/profile/statistics',
     hasFacedImage: true,
+    backgroundPosition: "top",
+    zoom: "160",
   },
   {
     name: 'Shakti',
@@ -47,6 +59,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-O99hLxqvU6WEDCKEWtj/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O99hLxqvU6WEDCKEWtj/profile/statistics',
     hasFacedImage: true,
+    backgroundPosition: "75% 15%",
+    zoom: "250",
   },
   {
     name: 'Vishal',
@@ -54,6 +68,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-O3LM3rNoBQ6bSf6QmzX/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O3LM3rNoBQ6bSf6QmzX/profile/statistics',
     hasFacedImage: true,
+    backgroundPosition: "center",
+    zoom: "200",
   },
   {
     name: 'Raaj',
@@ -61,13 +77,17 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-O8M7yF3aLdkoJDW4Bng/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O8M7yF3aLdkoJDW4Bng/profile/statistics',
     hasFacedImage: false,
+    backgroundPosition: "center",
+    zoom: "100",
   },
   {
     name: 'Vikas',
     img: 'https://f002.backblazeb2.com/b2api/v1/b2_download_file_by_id?fileId=4_z0e2621278a7d96a270300f13_f1049020e3508bc4b_d20240803_m041957_c002_v0203007_t0020_u01722658797197',
     profileUrl : "https://stumpsapp.com/player/-O25Iky_Ox4iNK3NN1vV/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O25Iky_Ox4iNK3NN1vV/profile/statistics',
-    hasFacedImage: false,
+    hasFacedImage: true,
+    backgroundPosition: "50% 80%",
+    zoom: "200",
   },
   // {
   //   name: 'Komal',
@@ -82,6 +102,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-O8qUUo8MNOCrbXQ8JA5/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O8qUUo8MNOCrbXQ8JA5/profile/statistics',
     hasFacedImage: true,
+    backgroundPosition: "top",
+    zoom: "150",
   },
   {
     name: 'Shravan',
@@ -89,6 +111,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-O8_ObwB9EogO25o9CNj/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O8_ObwB9EogO25o9CNj/profile/statistics',
     hasFacedImage: false,
+    backgroundPosition: "center",
+    zoom: "100",
   },
   {
     name: 'Balaram',
@@ -96,6 +120,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-OEvKiHYtngHcGu8-S-Y/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-OEvKiHYtngHcGu8-S-Y/profile/statistics',
     hasFacedImage: true,
+    backgroundPosition: "40% 50%",
+    zoom: "175",
   },
   // {
   //   name: 'Vishal Reddy',
@@ -110,6 +136,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-O3LUWnh-p2-7JNQ85rX/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O3LUWnh-p2-7JNQ85rX/profile/statistics',
     hasFacedImage: true,
+    backgroundPosition: "top",
+    zoom: "150",
   },
   {
     name: 'Akshat',
@@ -117,6 +145,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-OFF5qtHTD4q6jwqJUd4/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-OFF5qtHTD4q6jwqJUd4/profile/statistics',
     hasFacedImage: false,
+    backgroundPosition: "center",
+    zoom: "100",
   },
   {
     name: 'Chintu',
@@ -124,6 +154,8 @@ let players = [
     profileUrl : "https://stumpsapp.com/player/-O3NWm_Z-LwQyoe8Bj0n/",
     statisticsUrl: 'https://gateway.stumpsapp.com/users/-O3NWm_Z-LwQyoe8Bj0n/profile/statistics',
     hasFacedImage: true,
+    backgroundPosition: "25% 10%",
+    zoom: "250",
   }
 ]
 
