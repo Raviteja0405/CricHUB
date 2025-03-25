@@ -72,6 +72,7 @@ const PlayersStatsPage = ({ darkMode }) => {
   useEffect(() => {
     if (playersStats.length === 0) return;
     let sortedPlayers = playersStats.filter((player) => player.matches > 0);
+    // console.log(playersStats)
 
     const sortFunctions = {
       "Most Runs": (a, b) => b.battingRuns - a.battingRuns,
@@ -99,8 +100,18 @@ const PlayersStatsPage = ({ darkMode }) => {
     };
 
     sortedPlayers.sort(sortFunctions[selectedOption] || (() => 0));
-
-    setTopPlayer(sortedPlayers[0] || null);
+    const topPlayerFromStats = sortedPlayers[0];
+    const topPlayerFromData = playersData.find(
+      (player) => player.name === topPlayerFromStats.name
+    );
+    if (topPlayerFromData) {
+      setTopPlayer({
+        ...topPlayerFromStats,
+        backgroundPosition: topPlayerFromData.backgroundPosition, 
+        zoom: topPlayerFromData.zoom, // Add zoom
+      });
+    }
+    
     setSortedStats(sortedPlayers);
   }, [selectedOption, playersStats, playType]);
 

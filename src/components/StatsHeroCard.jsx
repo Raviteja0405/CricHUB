@@ -46,6 +46,7 @@ const StatsHeroCard = ({ player, playType, selectedOption, darkMode }) => {
         return "-";
     }
   };
+  // console.log("Player: ", player);
 
   const handleImageLoad = () => {
     setImageLoading(false); // Image has loaded, hide loading spinner
@@ -65,14 +66,22 @@ const StatsHeroCard = ({ player, playType, selectedOption, darkMode }) => {
             <div className="animate-spin border-t-4 border-blue-500 border-solid w-10 h-10 rounded-full"></div>
           </div>
         )}
-        <img
-          // eslint-disable-next-line react/prop-types
-          src={player.image}
+        <div
+          style={{ 
+            // eslint-disable-next-line react/prop-types
+            backgroundImage: `url(${player.image})`,
+            // eslint-disable-next-line react/prop-types
+            backgroundPosition: player.backgroundPosition,
+            // eslint-disable-next-line react/prop-types
+            backgroundSize: `${player.zoom}%`,
+          }}
+          className="w-40 h-40 bg-cover bg-center rounded-lg shadow-lg transform transition duration-300 hover:scale-105"
           // eslint-disable-next-line react/prop-types
           alt={player.name}
-          className="w-40 h-40 rounded-lg object-cover shadow-lg transform transition duration-300 hover:scale-105"
+          // eslint-disable-next-line react/no-unknown-property
           onLoad={handleImageLoad} // Trigger when the image has loaded
-        />
+        ></div>
+
         <div
           className={`absolute top-0 right-0 px-4 py-2 rounded-lg text-center text-sm font-semibold bg-[#2F5D93] ${
             darkMode ? "" : " text-white"

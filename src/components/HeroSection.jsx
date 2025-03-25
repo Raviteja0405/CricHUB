@@ -20,7 +20,7 @@ const HeroSection = ({ darkMode }) => {
 
   return (
     <section
-      className={`w-full flex flex-col items-center justify-center text-center mt-10 ${
+      className={`w-full flex flex-col items-center justify-center text-center mt-10 mb-21 ${
         darkMode ? "bg-[#0a0f1e] text-white" : "bg-gray-100 text-gray-900"
       }`}
     >
