@@ -31,7 +31,6 @@ const PlayersStatsPage = ({ darkMode }) => {
         const data = await response.json();
         const playerData = data.result || {};
         let matchStats = matchFormat === "ODI" ? playerData["4"] : playerData["5"] || {};
-
         return {
           name: player.name,
           image: player.hasFacedImage ? player.img : "https://www.bcci.tv/img/default-player-men-new1.svg",
@@ -52,6 +51,7 @@ const PlayersStatsPage = ({ darkMode }) => {
           bowlingFigure: matchStats.bbl || "0-0",
           economy: matchStats.bleco || 0,
           bowlingStrikeRate: matchStats.blsr || 0,
+          bowling3w: matchStats.bl3w || 0,
         };
       } catch (error) {
         console.error(error);

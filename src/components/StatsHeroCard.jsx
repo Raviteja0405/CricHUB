@@ -3,7 +3,6 @@ import  { useState } from "react";
 // eslint-disable-next-line react/prop-types
 const StatsHeroCard = ({ player, playType, selectedOption, darkMode }) => {
   const [imageLoading, setImageLoading] = useState(true);
-
   const getBadgeValue = () => {
     switch (selectedOption) {
       case "Most Runs":
@@ -181,9 +180,9 @@ const StatsHeroCard = ({ player, playType, selectedOption, darkMode }) => {
                 <strong className="text-lg">{player.economy}</strong>
               </div>
               <div className="text-center">
-                <span className={`block text-sm ${darkMode ? "text-gray-400" : "text-gray-500"}`}>Runs</span>
+                <span className={`block text-sm ${darkMode ? "text-gray-400" : "text-gray-500"}`}>3Ws</span>
                 {/* eslint-disable-next-line react/prop-types */}
-                <strong className="text-lg">{player.bowlingRuns}</strong>
+                <strong className="text-lg">{player.bowling3w}</strong>
               </div>
             </>
           )}
