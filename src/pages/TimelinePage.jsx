@@ -1,4 +1,4 @@
-import timelineData from "../data/timeLineData.js";
+import timelineData from "../data/timelineData.js";
 import TimelineCard from "../components/TimelineCard.jsx";
 
 // eslint-disable-next-line react/prop-types
