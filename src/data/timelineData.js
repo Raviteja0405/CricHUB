@@ -1,15 +1,15 @@
 const timelineData = [
   {
     date: "April 06, 2025", 
-    title: "First ever hat-trick & 5-wicket haul in ODI - Vishal",
-    description: "A phenomenal performance by Vishal etched his name in history as he became the first player to claim both a hat-trick and a five-wicket haul in the ODI format for the One8 team. Facing the fierce Roaring Reddy's, Vishal delivered a devastating spell, taking 5 wickets in just 9 balls without conceding a single run. His precision, spin, and tactical brilliance dismantled the opposition's batting lineup, turning the game on its head. This remarkable feat not only showcased his skill but also made him a standout performer and a rising star in limited-overs cricket.", 
+    title: "Male ego unleashed - Roaring Reddy's captain scores record-breaking 81",
+    description: "Fuelled by pride and male ego after the previous match's collapse, the Roaring Reddy's captain roared back with a blistering knock in the very next ODI. Taking the challenge personally, he smashed a sensational 81 runs off just 37 balls, including 10 towering sixes and 3 boundaries. His explosive innings not only silenced critics but also set a new team milestone as Roaring Reddy's became the first side to post a triple-digit total - 107. This dominant performance reminded everyone of the firepower he possesses and turned the series into a thrilling contest.", 
     mediaType: "none", 
     mediaUrl: null,
   },
   {
     date: "April 06, 2025", 
-    title: "Male ego unleashed - Roaring Reddy's captain scores record-breaking 81",
-    description: "Fuelled by pride and male ego after the previous match's collapse, the Roaring Reddy's captain roared back with a blistering knock in the very next ODI. Taking the challenge personally, he smashed a sensational 81 runs off just 37 balls, including 10 towering sixes and 3 boundaries. His explosive innings not only silenced critics but also set a new team milestone as Roaring Reddy's became the first side to post a triple-digit total - 107. This dominant performance reminded everyone of the firepower he possesses and turned the series into a thrilling contest.", 
+    title: "First ever hat-trick & 5-wicket haul in ODI - Vishal",
+    description: "A phenomenal performance by Vishal etched his name in history as he became the first player to claim both a hat-trick and a five-wicket haul in the ODI format for the One8 team. Facing the fierce Roaring Reddy's, Vishal delivered a devastating spell, taking 5 wickets in just 9 balls without conceding a single run. His precision, spin, and tactical brilliance dismantled the opposition's batting lineup, turning the game on its head. This remarkable feat not only showcased his skill but also made him a standout performer and a rising star in limited-overs cricket.", 
     mediaType: "none", 
     mediaUrl: null,
   },
