@@ -106,7 +106,7 @@ let players = [
     zoom: "150",
   },
   // {
-  //   name: 'Shravan',
+  //   name: 'Shravan japan',
   //   img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0017.jpg',
   //   profileUrl : "https://stumpsapp.com/player/-O8_ObwB9EogO25o9CNj/",
   //   statisticsUrl: 'https://gateway.stumpsapp.com/users/-O8_ObwB9EogO25o9CNj/profile/statistics',
@@ -123,13 +123,31 @@ let players = [
     backgroundPosition: "40% 50%",
     zoom: "175",
   },
-  // {
-  //   name: 'Vishal Reddy',
-  //   img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0079.jpg',
-  //   profileUrl : "https://stumpsapp.com/player/-OAjRx3jILQLHjvOXMcj/",
-  //   statisticsUrl: 'https://gateway.stumpsapp.com/users/-OAjRx3jILQLHjvOXMcj/profile/statistics',
-  //   hasFacedImage: false,
-  // },
+  {
+    name: 'Vishal Reddy',
+    img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0079.jpg',
+    profileUrl : 'https://stumpsapp.com/player/-OAjRx3jILQLHjvOXMcj/',
+    statisticsUrl: 'https://gateway.stumpsapp.com/users/-OAjRx3jILQLHjvOXMcj/profile/statistics',
+    hasFacedImage: false,
+  },
+  {
+    name: 'Johnny', 
+    img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0096.jpg',
+    profileUrl: 'https://stumpsapp.com/player/-ON2bV2D-WqHuGbMgTvl/',
+    statisticsUrl: 'https://gateway.stumpsapp.com/users/-ON2bV2D-WqHuGbMgTvl/profile/statistics',
+    hasFacedImage: false,
+    backgroundPosition: "",
+    zoom: "",
+  },
+  {
+    name: 'Shravan',
+    img: 'https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0086.jpg',
+    profileUrl: 'https://stumpsapp.com/player/-OMtEcJcfR_Fh5I2J4q7/',
+    statisticsUrl: 'https://gateway.stumpsapp.com/users/-OMtEcJcfR_Fh5I2J4q7/profile/statistics',
+    hasFacedImage: false,
+    backgroundPosition: "",
+    zoom: "",
+  }
   // {
   //   name: 'Prakash',
   //   img: 'https://f002.backblazeb2.com/b2api/v1/b2_download_file_by_id?fileId=4_z0e2621278a7d96a270300f13_f117836b45848c435_d20240803_m042742_c002_v0203009_t0030_u01722659262596',
