@@ -1,5 +1,16 @@
 const timelineData = [
   {
+    date: "April 18, 2025",
+    title: "Captain Rahul's 100th Wicket - A Moment Meant to Be",
+    description:
+      "On April 18, 2025 — fittingly the 18th, Virat Kohli's jersey number — Rahul, captain of Rising Rahuls, claimed his 100th wicket across formats in dramatic fashion.\n\nWith Jagan blazing through the early overs, the match was slipping away. But Rahul brought himself on and struck gold, bowling Jagan out and instantly shifting the momentum. That wasn't just a turning point — it was Rahul's milestone wicket.\n\nAs the wicket goes, Rahul stood tall, a smile spreading across his face. He raised a note that read:\n“This one is for Virat Kohli.”\nThe crowd roared as he held the note high, pointing it to the sky in a tribute to the legend who inspired him. The celebration wasn't just about the milestone, but about honoring a player who shaped Rahul's cricketing journey. The emotion was palpable, and it was clear that the moment would forever be etched in his memory.\n\nAt that moment, Rahul had 100 wickets across all formats:\n56 wickets in ODIs\n42 wickets in Tests\n2 wickets in T20s\n\nA perfect moment. A perfect date. A captain's breakthrough when it mattered most.",
+    mediaType: "image",
+    mediaUrl:
+      "https://i.ibb.co/Vc1z3PPn/file-00000000cc9461f78a33725a80447688-conversation-id-68032c1f-2870-800f-9d06-79e70f6b254a.png",
+    zoom: "48",
+    backgroundPosition: "top",
+  },
+  {
     date: "April 12, 2025",
     title: "Double Trouble! Back-to-Back Hat-tricks",
     description:

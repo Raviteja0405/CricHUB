@@ -101,7 +101,7 @@ const StatsHeroCard = ({ player, playType, selectedOption, darkMode }) => {
           className={`grid grid-cols-4 sm:grid-cols-10 gap-6 mt-4 p-4 rounded-lg shadow-md bg-opacity-75 ${darkMode ? "bg-gray-800" : "bg-gray-200"} overflow-x-auto whitespace-nowrap`}
         >
           <div className="text-center">
-            <span className={`block text-sm font-bold ${darkMode ? "text-gray-400" : "text-gray-500"}`}>Matches</span>
+            <span className={`block text-sm ${darkMode ? "text-gray-400" : "text-gray-500"}`}>Matches</span>
             {/* eslint-disable-next-line react/prop-types */}
             <strong className="text-lg">{player.matches}</strong>
           </div>

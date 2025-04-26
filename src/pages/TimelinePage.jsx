@@ -37,9 +37,8 @@ const TimelinePage = ({ darkMode }) => {
 
               {/* Timeline Card */}
               <div
-                className={`ml-10 sm:ml-0 w-full sm:w-1/2 px-6 flex ${
-                  index % 2 === 0 ? "sm:justify-start" : "sm:justify-end"
-                }`}
+                className={`ml-10 sm:ml-0 w-full sm:w-1/2 px-6 flex`}
+                style={{ zIndex: timelineData.length - index }} // Set z-index based on index
               >
                 <TimelineCard {...event} />
               </div>
