@@ -12,7 +12,7 @@ const StatsSidebarCard = ({title, icon, options, selectedOption, setSelectedOpti
 
   return (
     <div
-      className={`rounded-lg shadow-md p- mb-4 transition-all ${
+      className={`rounded-lg shadow-md mb-4 transition-all ${
         darkMode
           ? "bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-white"
           : "bg-gradient-to-r from-white via-gray-100 to-white text-gray-800"

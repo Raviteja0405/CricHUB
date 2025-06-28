@@ -53,7 +53,7 @@ const StatsHeroCard = ({ player, playType, selectedOption, darkMode }) => {
 
   return (
     <div
-      className={`relative flex flex-col md:flex-row items-center p-6 rounded-lg shadow-lg transition-all duration-300 transform bg-[url(https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)] bg-cover ${
+      className={`relative flex flex-col md:flex-row items-center pt-10 p-6 sm:p-6 rounded-lg shadow-lg transition-all duration-300 transform bg-[url(https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)] bg-cover ${
         darkMode ? "bg-gray-900 text-white" : "bg-white text-gray-800"
       }`}
     >
@@ -190,13 +190,23 @@ const StatsHeroCard = ({ player, playType, selectedOption, darkMode }) => {
       </div>
 
       {/* Badge for the Selected Stat */}
+      {/* Desktop Badge */}
       <div
         className={`absolute top-4 right-4 px-6 py-3 rounded-lg hidden sm:block text-center shadow-md text-white ${
-          darkMode ? "bg-gradient-to-r from-[#7b9dc3] to-[#2F5D93]" : "bg-gradient-to-r to-[#94b1d3]"
+          darkMode ? "bg-gradient-to-r from-[#7b9dc3]" : "bg-gradient-to-r to-[#94b1d3]"
         }`}
       >
         <h2 className="text-3xl font-bold">{getBadgeValue()}</h2>
         <p className="text-sm">{selectedOption}</p>
+      </div>
+
+      {/* Mobile Badge (Compact) */}
+      <div
+        className={`absolute top-1 right-1 px-4 py-2 rounded-md block sm:hidden text-xs font-bold text-white shadow-md ${
+          darkMode ? "bg-[#2F5D93]" : "bg-[#94b1d3]"
+        }`}
+      >
+        {selectedOption}
       </div>
     </div>
   );

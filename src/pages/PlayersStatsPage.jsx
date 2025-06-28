@@ -10,7 +10,7 @@ const PlayersStatsPage = ({ darkMode }) => {
   const [sortedStats, setSortedStats] = useState([]);
   const [loading, setLoading] = useState(true);
   const [topPlayer, setTopPlayer] = useState(null);
-  const [matchFormat, setMatchFormat] = useState("Test");
+  const [matchFormat, setMatchFormat] = useState("ODI");
   const [selectedOption, setSelectedOption] = useState("Most Runs");
   const [playType, setPlayType] = useState("Batting");
 
@@ -30,7 +30,14 @@ const PlayersStatsPage = ({ darkMode }) => {
 
         const data = await response.json();
         const playerData = data.result || {};
-        let matchStats = matchFormat === "ODI" ? playerData["4"] : playerData["5"] || {};
+        const formatKeyMap = {
+          T20: "2",
+          Club: "3",
+          ODI: "4",
+          Test: "5",
+        };
+
+        let matchStats = playerData[formatKeyMap[matchFormat]] || {};
         return {
           name: player.name,
           image: player.hasFacedImage ? player.img : "https://www.bcci.tv/img/default-player-men-new1.svg",
@@ -100,10 +107,27 @@ const PlayersStatsPage = ({ darkMode }) => {
     };
 
     sortedPlayers.sort(sortFunctions[selectedOption] || (() => 0));
+    if (sortedPlayers.length === 0) {
+      setTopPlayer(null);
+      return;
+    }
+
     const topPlayerFromStats = sortedPlayers[0];
+
     const topPlayerFromData = playersData.find(
       (player) => player.name === topPlayerFromStats.name
     );
+
+    if (topPlayerFromData) {
+      setTopPlayer({
+        ...topPlayerFromStats,
+        backgroundPosition: topPlayerFromData.backgroundPosition,
+        zoom: topPlayerFromData.zoom,
+      });
+    } else {
+      setTopPlayer(topPlayerFromStats); // fallback
+    }
+
     if (topPlayerFromData) {
       setTopPlayer({
         ...topPlayerFromStats,
