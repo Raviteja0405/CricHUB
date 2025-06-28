@@ -59,6 +59,7 @@ const PlayersStatsPage = ({ darkMode }) => {
           economy: matchStats.bleco || 0,
           bowlingStrikeRate: matchStats.blsr || 0,
           bowling3w: matchStats.bl3w || 0,
+          bowling5w: matchStats.bl5w || 0,
         };
       } catch (error) {
         console.error(error);

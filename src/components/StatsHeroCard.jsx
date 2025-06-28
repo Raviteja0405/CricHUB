@@ -184,6 +184,11 @@ const StatsHeroCard = ({ player, playType, selectedOption, darkMode }) => {
                 {/* eslint-disable-next-line react/prop-types */}
                 <strong className="text-lg">{player.bowling3w}</strong>
               </div>
+              <div className="text-center">
+                <span className={`block text-sm ${darkMode ? "text-gray-400" : "text-gray-500"}`}>5Ws</span>
+                {/* eslint-disable-next-line react/prop-types */}
+                <strong className="text-lg">{player.bowling5w}</strong>
+              </div>
             </>
           )}
         </div>

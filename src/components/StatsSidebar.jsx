@@ -26,7 +26,6 @@ const StatsSidebar = ({ matchFormat, setMatchFormat, selectedOption, setSelected
             }`}
             onClick={() => {
               handleFormatChange(format);
-              setSelectedOption("Most Runs");
             }}
           >
             {format}
