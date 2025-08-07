@@ -100,7 +100,7 @@ let players = [
   //   zoom: "",
   // },
   {
-    name: "Sathiesh",
+    name: "Satish",
     img: "https://f002.backblazeb2.com/file/stumps-prod-images/stock_images/250x250_profile/0021.jpg",
     profileUrl: "https://stumpsapp.com/player/-OR43FL7c9b6VAjPUTpF/",
     statisticsUrl:
