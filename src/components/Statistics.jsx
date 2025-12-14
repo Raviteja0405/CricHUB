@@ -9,6 +9,7 @@ const body = JSON.stringify({
 // eslint-disable-next-line react/prop-types
 const Statistics = ({ darkMode }) => {
   const [stats, setStats] = useState([
+    {format: "Club Format", topScorer: "Loading...", bestBowler: "Loading...", icon: "🏅" },
     { format: "ODI Format", topScorer: "Loading...", bestBowler: "Loading...", icon: "🏆" },
     { format: "Test Format", topScorer: "Loading...", bestBowler: "Loading...", icon: "⭐" },
   ]);
@@ -32,11 +33,14 @@ const Statistics = ({ darkMode }) => {
 
         const data = await response.json();
         const playerData = data.result || {};
+        const clubStats = playerData["3"] || {};
         const odiStats = playerData["4"] || {};
         const testStats = playerData["5"] || {};
 
         return {
           name: player.name,
+          clubRuns: clubStats.btrn || 0,
+          clubWickets: clubStats.blwkt || 0,
           odiRuns: odiStats.btrn || 0,
           odiWickets: odiStats.blwkt || 0,
           testRuns: testStats.btrn || 0,
@@ -53,11 +57,15 @@ const Statistics = ({ darkMode }) => {
 
       let highestOdiRuns = 0,
         highestTestRuns = 0,
+        highestClubRuns = 0,
+        highestClubWickets = 0,
         mostOdiWickets = 0,
         mostTestWickets = 0;
 
       let highestOdiPlayer = "Unknown",
         highestTestPlayer = "Unknown",
+        highestClubPlayer = "Unknown",
+        mostClubWicketsPlayer = "Unknown",
         mostOdiWicketsPlayer = "Unknown",
         mostTestWicketsPlayer = "Unknown";
 
@@ -73,6 +81,11 @@ const Statistics = ({ darkMode }) => {
             highestTestPlayer = data.name;
           }
 
+          if(data.clubRuns > highestClubRuns) {
+            highestClubRuns = data.clubRuns;
+            highestClubPlayer = data.name;
+          }
+
           if (data.odiWickets > mostOdiWickets) {
             mostOdiWickets = data.odiWickets;
             mostOdiWicketsPlayer = data.name;
@@ -82,10 +95,21 @@ const Statistics = ({ darkMode }) => {
             mostTestWickets = data.testWickets;
             mostTestWicketsPlayer = data.name;
           }
+
+          if (data.clubWickets > highestClubWickets) {
+            highestClubWickets = data.clubWickets;
+            mostClubWicketsPlayer = data.name;
+          }
         }
       });
 
       setStats([
+        {
+          format: "Club Format",
+          topScorer: `${highestClubPlayer} - ${highestClubRuns} runs`,
+          bestBowler: `${mostClubWicketsPlayer} - ${highestClubWickets} wickets`,
+          icon: "🏅",
+        },
         {
           format: "ODI Format",
           topScorer: `${highestOdiPlayer} - ${highestOdiRuns} runs`,

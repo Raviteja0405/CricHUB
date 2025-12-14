@@ -1,5 +1,13 @@
 const timelineData = [
   {
+    date: "November 29, 2025",
+    title: "Captain Rahul's 200th Wicket - Dominating bowling record. Rahul Reddy's milestone-2000+ runs across formats",
+    description:
+      "On November 29, 2025, Rahul — captain of Rising Rahul's — brought up a massive milestone: his 200th wicket across all formats, achieved in his 52nd club match and 152nd match overall.\n\nHis previous major achievement, the 100th wicket, had come earlier this year on April 18, 2025. The wait between the two milestones? A total of 225 days — a period filled with determination, rhythm, and relentless performance.\n\nWhen Rahul struck to reach the 200-mark, his wicket tally stood at:\n• 9 wickets in T20s\n• 53 wickets in Club cricket\n• 94 wickets in ODIs\n• 44 wickets in Tests\n\nLater in the next match on the same day, Rahul Reddy added another moment to the timeline by crossing 2000+ career runs across formats, carrying an overall average of 11.9. A milestone that reflected grit, consistency, and a journey built on fighting spirit.",
+    mediaType: "none",
+    mediaUrl: null,
+  },
+  {
     date: "April 18, 2025",
     title: "Captain Rahul's 100th Wicket - A Moment Meant to Be",
     description:
